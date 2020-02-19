@@ -2,8 +2,7 @@ const inquirer = require("inquirer");
 const util = require("util");
 const fs = require("fs");
 const axios = require("axios");
-const pdf = require("html-pdf");
-const options = { format: 'Letter'};
+
 
 
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -160,16 +159,11 @@ function gitResult(name, c){
 
         writeFileAsync("index.html", html)
 
-        const htmlToPdf = fs.readFileSync("./index.html", "utf8");
-
-        pdf.create(htmlToPdf, options).toFile("./profile.pdf", function(err, res){
-            if(err) return console.log(err);
-            console.log(res);
-        })
-    })
+       
+    
    
 });
 
-
+    })
 
 };
