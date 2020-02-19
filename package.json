@@ -1,0 +1,24 @@
+{
+  "name": "profile-creator",
+  "version": "1.0.0",
+  "description": "creates html and pdf of github profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClayData/profile-creator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClayData/profile-creator/issues"
+  },
+  "homepage": "https://github.com/ClayData/profile-creator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "html-pdf": "^2.2.0",
+    "inquirer": "^7.0.4"
+  }
+}
