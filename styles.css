@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 .jumbotron {
     background-color: #D0E9D3;
 }
@@ -6,4 +10,12 @@
     background-color: #336362;
     color: #F6F7E8;
     margin-bottom: 20px;
+    height: 120px;
+}
+
+a {
+    color: #212529;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
 }

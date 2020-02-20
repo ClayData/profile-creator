@@ -64,6 +64,7 @@ function gitResult(name, c){
            <meta charset="UTF-8">
            <meta name="viewport" content="width=device-width, initial-scale=1.0">
            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+           <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
            <link rel="stylesheet" href="styles.css">
            <title>Document</title>
         <style>
@@ -80,33 +81,36 @@ function gitResult(name, c){
                  <p class="lead"></p>
               <div class="row">
                <div class="col-4"></div>   
-                <div class="col-5">
+                <div class="col-4">
                  <img src="${profPic}">
                 </div> 
+                <div class="col-4"></div>
               </div>
-              <div class="row">
-              <div class="col-5"></div>  
-                <div class="col-3">
+              <div class="row text-center">
+              <div class="col-4"></div>  
+                <div class="col-4">
                  <h2>${name}</h2>
                 </div>
+                <div class="col-4"></div>
               </div>  
-              <div class="row">
-                <div class="col-5"></div>  
-                <div class="col-3">
+              <div class="row text-center">
+                <div class="col-4"></div>  
+                <div class="col-4">
                  <p>${userBio}</p>
                  </div>
+                 <div class="col-4"></div>  
               </div>   
-              <div class="row">
-                <div class="col-1"></div>  
-                <div class="col-3">
+              <div class="row text-center">
+                
+                <div class="col-4">
                     <a href="${blog}">Blog</a>
                 </div>   
-                <div class="col-2"></div>
+               
                 <div class="col-4">
                     <a href="${gitLink}">GitHub</a>
                 </div>
-                <div class="col-2">
-                    <a href="https://www.google.com/maps/place/${location}/">St. Paul Minnesota</a>
+                <div class="col-4">
+                    <a href="https://www.google.com/maps/place/${location}/">Location</a>
                 </div>
              </div>
                 </div>
