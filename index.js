@@ -2,6 +2,8 @@ const inquirer = require("inquirer");
 const util = require("util");
 const fs = require("fs");
 const axios = require("axios");
+const options = { format: "Letter"};
+var pdf = require('html-pdf');
 
 
 
@@ -68,7 +70,7 @@ function gitResult(name, c){
            <link rel="stylesheet" href="styles.css">
            <title>Document</title>
         <style>
-        body {background-color: ${c};}
+        .card {background-color: ${c};}
         
         </style>
        </head>
@@ -161,9 +163,14 @@ function gitResult(name, c){
 </html>
     `   ;
 
-        writeFileAsync("index.html", html)
+        // writeFileAsync("index.html", html)
 
-       
+        // const html = fs.readFileSync(htmlToPdf, 'utf8');
+
+        pdf.create(html, options).toFile('./index.pdf', function(err, res) {
+            if (err) return console.log(err);
+            console.log(res); // { filename: '/app/businesscard.pdf' }
+          });
     
    
 });
