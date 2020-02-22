@@ -1,13 +1,13 @@
 const inquirer = require("inquirer");
 const util = require("util");
-const fs = require("fs");
+const fs = require("fs"); 
 const axios = require("axios");
 const options = { format: "Letter"};
 var pdf = require('html-pdf');
 
 
 
-const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile); 
 
 profileGenerator();
 
@@ -71,7 +71,7 @@ function gitResult(name, c){
            <title>Document</title>
         <style>
         .card {background-color: ${c};}
-        
+        .jumbotron {background-color: ${c}}
         </style>
        </head>
        <body>
@@ -163,7 +163,7 @@ function gitResult(name, c){
 </html>
     `   ;
 
-        // writeFileAsync("index.html", html)
+        writeFileAsync("index.html", html)
 
         // const html = fs.readFileSync(htmlToPdf, 'utf8');
 
